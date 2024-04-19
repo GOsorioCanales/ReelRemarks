@@ -1,16 +1,44 @@
 body {
-
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
     background-color: black;
-    color: whitesmoke;
+    color: black;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tittle {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#reelRemarks {
+    color: black;
+    font-size: 50px;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 li {
@@ -21,8 +49,17 @@ li {
 a {
     color: whitesmoke;
     text-decoration: none;
+    font-size: 20px;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.buttonsContainer {
+    display: flex;
+}
+
+.homeButtons {
+    margin-right: 10px;
 }
