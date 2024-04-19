@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './navbar';
 import '../styles/styles.css';
+import Buttons from './Buttons';
 
 function App() {
     return (
@@ -10,7 +11,12 @@ function App() {
                 <section>
                     <Navbar/>
                 </section>
-                <h1>ReelRemarks</h1>
+                <section id='tittle'>
+                    <h1 id='reelRemarks'>ReelRemarks</h1>
+                </section>
+                <section>
+                    <Buttons/>
+                </section>
             </section>
         </Router>
     )
