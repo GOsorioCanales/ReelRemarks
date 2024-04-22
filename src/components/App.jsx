@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './navbar';
 import '../styles/styles.css';
 import Buttons from './Buttons';
+import About from './About';
+import Contact from './Contact';
 
 function App() {
     return (
@@ -16,6 +18,12 @@ function App() {
                 </section>
                 <section>
                     <Buttons/>
+                </section>
+                <section>
+                    <About/>
+                </section>
+                <section>
+                    <Contact/>
                 </section>
             </section>
         </Router>
