@@ -63,3 +63,16 @@ a:hover {
 .homeButtons {
     margin-right: 10px;
 }
+
+#email {
+    color: black;
+    margin-right: 10px
+}
+
+#linkedin {
+    color: black;
+}
+
+.contact {
+    display: flex;
+}
