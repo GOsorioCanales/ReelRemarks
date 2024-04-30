@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import Navbar from './navbar';
 import '../styles/styles.css';
 import Buttons from './Buttons';
@@ -16,15 +16,11 @@ function App() {
                 <section id='tittle'>
                     <h1 id='reelRemarks'>ReelRemarks</h1>
                 </section>
-                <section>
-                    <Buttons/>
-                </section>
-                <section>
-                    <About/>
-                </section>
-                <section>
-                    <Contact/>
-                </section>
+                <Routes>
+                    <Route path='/' element={<Buttons/>}/>
+                    <Route path='/about' element={<About/>} />
+                    <Route path='/contact' element={<Contact/>}/>
+                </Routes>
             </section>
         </Router>
     )
