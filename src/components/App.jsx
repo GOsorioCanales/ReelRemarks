@@ -5,6 +5,8 @@ import '../styles/styles.css';
 import Buttons from './Buttons';
 import About from './About';
 import Contact from './Contact';
+import AddMovie from './AddMovie';
+import SearchMovie from './SearchMovie';
 
 function App() {
     return (
@@ -19,7 +21,9 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Buttons/>}/>
                     <Route path='/about' element={<About/>} />
-                    <Route path='/contact' element={<Contact/>}/>
+                    <Route path='/contact' element={<Contact />} />
+                    <Route path='/addMovie' element={<AddMovie />} />
+                    <Route path='/searchMovie' element={<SearchMovie/>} />
                 </Routes>
             </section>
         </Router>
